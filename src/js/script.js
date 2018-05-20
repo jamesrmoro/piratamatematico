@@ -21,12 +21,17 @@ $(document).ready(function(){
 		$(".meta-do-jogo").css("display", "none");
 	});
 
-	$("body").on("click", ".navigation li", function() {
+	$('html,body .screen-3').animate({scrollBottom: document.body.scrollHeight},"fast");
+
+	$("body").on("click", ".navigation li.desbloqueado", function() {
 		nivel = $(this).attr("data-nivel");
 		$("#nivel-"+nivel+"").fadeIn();
 		$("#"+nivel+"").removeClass("remove-msg");
 		$(".meta-do-jogo").css("display", "block");
 	});
+
+   	var element = document.getElementById("area");
+    element.scrollTop = element.scrollHeight;
 
 	$('.nivel').each(function (index) {
  	   movimento_inicial = Number($("#nivel-"+index+" .movimentos").attr("data-movimentos"));
@@ -122,6 +127,7 @@ $(document).ready(function(){
 			$("#"+nivel+" .mensagem-1").addClass("acertou");
 			$("#"+nivel+" .status-msg").addClass("icon-win");
 			$("#"+nivel+" .status-msg").html("Que jogada incrível");
+			$(".navigation li:last-child").addClass("desbloqueado-first");
 			setTimeout(function() {
 		       $("#"+nivel+" .mensagem-1").removeClass("exibe");
 		       $("#"+nivel+" .mensagem-2").addClass("exibe");
@@ -142,6 +148,7 @@ $(document).ready(function(){
 				$("#"+nivel+" .stars li:nth-of-type(1)").addClass("win");
 			}
 			$("#"+nivel+"").next().addClass("desbloqueado");
+			$("#"+nivel+"").closest("body").find(".navigation li.desbloqueado").prev().addClass("desbloqueado");
 
 		} else if (resultado != meta_inicial && novomovimento === 0)	{
 			$("#"+nivel+" .mensagem-1 .status-win-or-loose").html("Errou");

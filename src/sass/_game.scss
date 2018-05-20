@@ -617,29 +617,65 @@ body {
 	    line-height: 36px;
 	    background-color: #f8f5d6;
 	    font-size: 0.75em;
-	    margin-top: 15px;
+	    margin-top: 30px;
 	    cursor: pointer;
 	    position: relative;
 	    z-index: 3;
+	    cursor: url(../../src/images/cursor.png),auto;
+
+
+	    &:last-child {
+
+	    	margin-bottom: 55px;
+
+
+	    	&.desbloqueado {
+
+		    	&.desbloqueado-first {
+
+		    		&:before {
+
+		    			display: none;
+		    		}
+		    	}
+
+	    		&:before {
+
+	    			display: none;
+	    		}
+	    	}
+
+
+	    }
+
+	    &.desbloqueado {
+
+	    	cursor: pointer;
+	    	pointer-events: inherit;
+
+	    	&:before {
+
+	    		display: none;
+	    	}
+
+
+	    }
 
 	    &:before {
 
-	    	width: 20px;
-		    height: 20px;
-		    cursor: pointer;
-		    content: "";
-		    left: -26px;
-		    top: 7px;
-		    position: absolute;
-		    border: 1px solid red;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+			content: "";
+			left: 0;
+			top: -19px;
+			position: absolute;
 			background: url(../../src/images/sprite.png) no-repeat;
-    		background-position: -46px -127px;
+			background-position: -46px -127px;
+			right: 0;
+			margin: 0 auto;
 	    }
 
-		&:last-child {
-
-			margin-bottom: 55px;
-		}
 	}
 }
 
@@ -677,15 +713,15 @@ body {
 		overflow-y: auto;
 
 		&::-webkit-scrollbar {
-		  width: 0px;
+		  width: 10px;
 		}
 
 		&::-webkit-scrollbar-thumb {
-		  background: transparent;
+		  background: url(../../src/images/bg2.jpg) no-repeat;
 		}
 
 		&::-webkit-scrollbar-track {
-		  background: transparent;
+		  background: blue;
 		}
 	}
 }
@@ -697,8 +733,9 @@ body {
 	top: 1px;
 	height: 100%;
 	width: 100%;
-	background: url(../../src/images/bg.jpg) no-repeat;
+	background: url(../../src/images/bg2.jpg) no-repeat;
 	background-size: 100%;
+	background-position: -1px -624px;
 }
 
 .screen-hidden {
