@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lógica</title>
+	<link rel="stylesheet" href="build/css/main.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="build/js/script.js"></script>
+</head>
+<body>
+	<div id="prototipo">
+		<ul class="nav">
+			<li data-nivel="0">Nível 0</li>
+			<li data-nivel="1">Nível 1</li>
+			<li data-nivel="2">Nível 2</li>
+			<li data-nivel="3">Nível 3</li>
+		</ul>
+		<div class="nivel desbloqueado" id="nivel-0">
+			<h2>Nível 0</h2>
+			<time>00:00</time>
+			<ul class="status">
+				<li class="meta" data-meta="3"><strong>Meta: </strong><span class="valor-meta"></span></li>
+				<li class="movimentos" data-movimentos="3"><strong>Movimentos: </strong><span class="valor-movimentos"></span></li>
+				<li class="total" data-inicial="0"><strong>Total: </strong><span class="valor-inicial"></span></li>
+			</ul>
+			<ul class="calc">
+				<li>vazio</li>
+				<li class="time-start start-time"><span data-operador="soma">+<i>1</i></span></li>
+				<li class="clear">limpar</li>
+				<li>vazio</li>
+				<li>vazio</li>
+				<li>vazio</li>
+				<li>vazio</li>
+				<li>vazio</li>
+				<li>vazio</li>
+			</ul>
+			<span class="title-vidas">Vidas</span>
+			<ul class="vidas">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="mensagem-1">
+				<span class="status-win-or-loose"></span>
+			</div>
+			<div class="mensagem-2">
+				<span class="status-msg">Que jogada incrível</span>
+				<span class="time">Seu tempo foi de: <i></i></span>
+				<ul class="stars">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<span class="jogar-novamente">Jogar novamente</span>
+			</div>
+		</div>
+		<div class="nivel" id="nivel-1">
+			<h2>Nível 1</h2>
+			<time>00:00</time>
+			<ul class="status">
+				<li class="meta" data-meta="8"><strong>Meta: </strong><span class="valor-meta"></span></li>
+				<li class="movimentos" data-movimentos="3"><strong>Movimentos: </strong><span class="valor-movimentos"></span></li>
+				<li class="total" data-inicial="0"><strong>Total: </strong><span class="valor-inicial"></span></li>
+			</ul>
+			<ul class="calc">
+				<li>vazio</li>
+				<li class="time-start start-time"><span data-operador="soma">+<i>2</i></span></li>
+				<li class="clear">limpar</li>
+				<li>vazio</li>
+				<li class="time-start start-time"><span data-operador="soma">+<i>3</i></span></li>
+				<li>vazio</li>
+				<li>vazio</li>
+				<li>vazio</li>
+				<li>vazio</li>
+			</ul>
+			<span class="title-vidas">Vidas</span>
+			<ul class="vidas">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="mensagem-1">
+				<span class="status-win-or-loose"></span>
+			</div>
+			<div class="mensagem-2">
+				<span class="status-msg">Que jogada incrível</span>
+				<span class="time">Seu tempo foi de: <i></i></span>
+				<ul class="stars">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<span class="jogar-novamente">Jogar novamente</span>
+			</div>
+		</div>
+		<div class="nivel" id="nivel-2">
+			<h2>Nível 2</h2>
+			<time>00:00</time>
+			<ul class="status">
+				<li class="meta" data-meta="12"><strong>Meta: </strong><span class="valor-meta"></span></li>
+				<li class="movimentos" data-movimentos="3"><strong>Movimentos: </strong><span class="valor-movimentos"></span></li>
+				<li class="total" data-inicial="0"><strong>Total: </strong><span class="valor-inicial"></span></li>
+			</ul>
+			<ul class="calc">
+				<li>vazio</li>
+				<li class="time-start start-time"><span data-operador="multiplicacao">x<i>4</i></span></li>
+				<li class="clear">limpar</li>
+				<li>vazio</li>
+				<li class="time-start start-time"><span data-operador="soma">+<i>1</i></span></li>
+				<li>vazio</li>
+				<li>vazio</li>
+				<li class="time-start start-time"><span data-operador="soma">+<i>2</i></span></li>
+				<li>vazio</li>
+			</ul>
+			<span class="title-vidas">Vidas</span>
+			<ul class="vidas">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="mensagem-1">
+				<span class="status-win-or-loose"></span>
+			</div>
+			<div class="mensagem-2">
+				<span class="status-msg">Que jogada incrível</span>
+				<span class="time">Seu tempo foi de: <i></i></span>
+				<ul class="stars">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<span class="jogar-novamente">Jogar novamente</span>
+			</div>
+		</div>
+		<div class="nivel" id="nivel-3">
+			<h2>Nível 3</h2>
+			<time>00:00</time>
+			<ul class="status">
+				<li class="meta" data-meta="7"><strong>Meta: </strong><span class="valor-meta"></span></li>
+				<li class="movimentos" data-movimentos="3"><strong>Movimentos: </strong><span class="valor-movimentos"></span></li>
+				<li class="total" data-inicial="1"><strong>Total: </strong><span class="valor-inicial"></span></li>
+			</ul>
+			<ul class="calc">
+				<li>vazio</li>
+				<li class="time-start start-time"><span data-operador="soma">+<i>4</i></span></li>
+				<li class="clear">limpar</li>
+				<li>vazio</li>
+				<li class="time-start start-time"><span data-operador="subtracao">-<i>2</i></span></li>
+				<li>vazio</li>
+				<li>vazio</li>
+				<li>vazio</li>
+				<li>vazio</li>
+			</ul>
+			<span class="title-vidas">Vidas</span>
+			<ul class="vidas">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="mensagem-1">
+				<span class="status-win-or-loose"></span>
+			</div>
+			<div class="mensagem-2">
+				<span class="status-msg">Que jogada incrível</span>
+				<span class="time">Seu tempo foi de: <i></i></span>
+				<ul class="stars">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<span class="jogar-novamente">Jogar novamente</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pirata Matématico</title>
+	<link rel="stylesheet" href="build/css/main.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="build/js/script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="screen-temp">
+			<div class="wrapper">
+				<div class="status-top">
+					<div class="item item-left"><img src="src/images/compass.svg" alt=""></div>
+					<div class="item item-right"><img src="src/images/settings.svg" alt=""></div>
+					<ul class="lifes vidas">
+						<li><i>1</i></li>
+						<li><i>2</i></li>
+						<li><i>3</i></li>
+						<li><i>4</i></li>
+						<li><i>5</i></li>
+					</ul>
+					<span class="msg-life">Vidas cheias</span>
+				</div>
+				<div class="screen-hidden">
+					informações
+				</div>
+				<div class="screen screen-1">
+					<span class="start">Jogar</span>
+				</div>
+				<div class="screen screen-2">
+					<div class="content-center">
+						<div class="logo">
+							logo do jogo
+						</div>
+						<div class="msg-load">
+							<p>Carregando coragem</p>
+						</div>
+					</div>
+				</div>
+				<div class="screen screen-3">
+					<div class="calculadora">
+						calculadora
+					</div>
+					<ul class="navigation">
+						<li data-nivel="15">15</li>
+						<li data-nivel="14">14</li>
+						<li data-nivel="13">13</li>
+						<li data-nivel="12">12</li>
+						<li data-nivel="11">11</li>
+						<li data-nivel="10">10</li>
+						<li data-nivel="9">09</li>
+						<li data-nivel="8">08</li>
+						<li data-nivel="7">07</li>
+						<li data-nivel="6">06</li>
+						<li data-nivel="5">05</li>
+						<li data-nivel="4">04</li>
+						<li data-nivel="3">03</li>
+						<li data-nivel="2">02</li>
+						<li data-nivel="1">01</li>
+						<li class="desbloqueado" data-nivel="0">00</li>
+					</ul>
+					<div class="nivel desbloqueado" id="nivel-0">
+						<h2>Nível 00</h2>
+						<time>00:00</time>
+						<div class="conteudo-calculadora">
+							<div class="wrapper-calculadora">
+								<ul class="status">
+									<li class="meta" data-meta="3"><strong>Meta: </strong><span class="valor-meta"></span></li>
+									<li class="movimentos" data-movimentos="3"><strong>Jogadas: </strong><span class="valor-movimentos"></span></li>
+								</ul>
+								<div class="total" data-inicial="0">
+									<span class="valor-inicial"></span>
+								</div>
+								<ul class="calc">
+									<li></li>
+									<li class="time-start start-time"><span data-operador="soma">+<i>1</i></span></li>
+									<li class="clear">limpar</li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<div class="mensagem-1">
+							<span class="status-win-or-loose"></span>
+						</div>
+						<div class="mensagem-2">
+							<div class="grupo-msg">
+								<div class="conteudo">
+									<span class="status-msg"></span>
+									<span class="time">Seu tempo foi de: <i></i></span>
+									<ul class="stars">
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<span title="Jogar novamente" class="jogar-novamente button">Jogar novamente</span>
+									<span title="Avançar de nível" class="proximo-nivel button">Avançar</span>
+								</div>
+							</div>
+						</div>
+						<div class="meta-do-jogo">
+							<div class="header">
+								<span>Nivel 00</span>
+								<span title="Fechar nível" class="close"></span>
+							</div>
+							<div class="objetivos">
+								<span class="title">Objetivo</span>
+								<span><i class="number">3</i></span>
+								<span>em 3 jogadas</span>
+							</div>
+							<div class="footer">
+								<span class="button start-nivel">Começar nível</span>
+							</div>
+						</div>
+					</div>
+					<div class="nivel" id="nivel-1">
+						<h2>Nível 01</h2>
+						<time>00:00</time>
+						<div class="conteudo-calculadora">
+							<div class="wrapper-calculadora">
+								<ul class="status">
+									<li class="meta" data-meta="8"><strong>Meta: </strong><span class="valor-meta"></span></li>
+									<li class="movimentos" data-movimentos="3"><strong>Jogadas: </strong><span class="valor-movimentos"></span></li>
+								</ul>
+								<div class="total" data-inicial="0">
+									<span class="valor-inicial"></span>
+								</div>
+								<ul class="calc">
+									<li></li>
+									<li class="time-start start-time"><span data-operador="soma">+<i>2</i></span></li>
+									<li class="clear">limpar</li>
+									<li></li>
+									<li class="time-start start-time"><span data-operador="soma">+<i>3</i></span></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<div class="mensagem-1">
+							<span class="status-win-or-loose"></span>
+						</div>
+						<div class="mensagem-2">
+							<div class="grupo-msg">
+								<div class="conteudo">
+									<span class="status-msg"></span>
+									<span class="time">Seu tempo foi de: <i></i></span>
+									<ul class="stars">
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<span title="Jogar novamente" class="jogar-novamente button">Jogar novamente</span>
+									<span title="Avançar de nível" class="proximo-nivel button">Avançar</span>
+								</div>
+							</div>
+						</div>
+						<div class="meta-do-jogo">
+							<div class="header">
+								<span>Nivel 01</span>
+								<span title="Fechar nível" class="close"></span>
+							</div>
+							<div class="objetivos">
+								<span class="title">Objetivo</span>
+								<span><i class="number">8</i></span>
+								<span>em 3 jogadas</span>
+							</div>
+							<div class="footer">
+								<span class="button start-nivel">Começar nível</span>
+							</div>
+						</div>
+					</div>
+					<div class="nivel" id="nivel-2">
+						<h2>Nível 02</h2>
+						<time>00:00</time>
+						<div class="conteudo-calculadora">
+							<div class="wrapper-calculadora">
+								<ul class="status">
+									<li class="meta" data-meta="8"><strong>Meta: </strong><span class="valor-meta"></span></li>
+									<li class="movimentos" data-movimentos="3"><strong>Jogadas: </strong><span class="valor-movimentos"></span></li>
+								</ul>
+								<div class="total" data-inicial="0">
+									<span class="valor-inicial"></span>
+								</div>
+								<ul class="calc">
+									<li></li>
+									<li class="time-start start-time"><span data-operador="soma">+<i>2</i></span></li>
+									<li class="clear">limpar</li>
+									<li></li>
+									<li class="time-start start-time"><span data-operador="soma">+<i>3</i></span></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+						<div class="mensagem-1">
+							<span class="status-win-or-loose"></span>
+						</div>
+						<div class="mensagem-2">
+							<div class="grupo-msg">
+								<div class="conteudo">
+									<span class="status-msg"></span>
+									<span class="time">Seu tempo foi de: <i></i></span>
+									<ul class="stars">
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<span title="Jogar novamente" class="jogar-novamente button">Jogar novamente</span>
+									<span title="Avançar de nível" class="proximo-nivel button">Avançar</span>
+								</div>
+							</div>
+						</div>
+						<div class="meta-do-jogo">
+							<div class="header">
+								<span>Nivel 02</span>
+								<span title="Fechar nível" class="close"></span>
+							</div>
+							<div class="objetivos">
+								<span class="title">Objetivo</span>
+								<span><i class="number">8</i></span>
+								<span>em 3 jogadas</span>
+							</div>
+							<div class="footer">
+								<span class="button start-nivel">Começar nível</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
